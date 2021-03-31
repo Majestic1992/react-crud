@@ -34,8 +34,8 @@ const EmployeeList = () => {
     setCurrentIndex(-1);
   };
 
-  const setActiveEmployee = (tutorial, index) => {
-    setCurrentEmployee(tutorial);
+  const setActiveEmployee = (employee, index) => {
+    setCurrentEmployee(employee);
     setCurrentIndex(index);
   };
 
@@ -150,7 +150,7 @@ const EmployeeList = () => {
             </div>
 
             <Link
-              to={"/tutorials/" + currentEmployee.id}
+              to={"/employees/" + currentEmployee.id}
               className="badge badge-warning"
             >
               Edit
